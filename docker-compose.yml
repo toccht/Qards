@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    lamp:
+        image: mattrayner/lamp
+        ports:
+            - 8080:80
+        volumes:
+            - ./src:/app/

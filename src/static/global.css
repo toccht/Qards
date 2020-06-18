@@ -1,0 +1,231 @@
+/* This is the CSS file that is loaded into every page */
+@import url('https://fonts.googleapis.com/css?family=Maitree');
+
+body {
+    background-color: #F5F5F0;
+    font-size: 14pt;
+    font-family: 'Maitree', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 4em;
+    margin-bottom: 3em;
+
+    background-color: #E8E8E8;
+}
+
+footer p {
+    font-size: 60%;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    width: 30em;
+    margin: 0 auto;
+    margin-top: 5em;
+    background-color: #E8E8E8;
+    padding: 5px;
+}
+
+header span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 3em;
+}
+
+header .btn {
+    background-color: #F5F5F0;
+}
+
+h1.dashboardHeader {
+    text-align: left;
+    border-bottom: 1px solid;
+    width: 57%;
+    margin-bottom: 0.5em;
+}
+
+h1.dashboardRolodex {
+    margin-top: 1em;
+    text-align: left;
+    border-bottom: 1px solid;
+    width: 57%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2.userQR {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 110%;
+    text-align: center;
+}
+
+p.homepageInfo {
+    text-align: block;
+    margin-bottom: 2em;
+}
+
+.btn,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #E8E8E8;
+    color: inherit;
+    text-decoration: none;
+    /* gets rid of underline */
+    padding: 0.2em 1em;
+    margin: 1em;
+    border: 2px solid transparent;
+    border-left: 2px solid black;
+    cursor: pointer;
+}
+
+.btn:hover,
+button:hover,
+.btn:focus,
+button:focus {
+    border: 2px solid black;
+}
+
+.btn.signupButton {
+
+    margin: 10em;
+    padding: 0.4em 2em;
+}
+
+/* Form Styles */
+
+form input,
+textarea {
+    display: block;
+    width: 88%;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 1em;
+    padding: 0.2em 0.5em;
+    border-radius: 0;
+    border: none;
+    border: 2px solid transparent;
+    border-left: 2px solid black;
+    background-color: #E8E8E8
+}
+
+form input:focus,
+textarea:focus {
+    border: 2px solid black;
+}
+
+#other-info input {
+    display: inline;
+    max-width: 35%;
+}
+
+/* Card Styles */
+
+.card {
+    margin-bottom: 40px;
+    background-color: #E8E8E8;
+    border: 2px solid black;
+    max-width: 40em;
+    min-height: 10em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.card h2 {
+    font: bold 140% Consolas, Monaco, monospace;
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+.card h3 {
+    font: bold 100% Consolas, Monaco, monospace;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    font: 70% Consolas, Monaco, monospace;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: inherit;
+}
+
+.qr {
+    display: block;
+    margin: 0 auto;
+}
+
+/* This is for the auto typer on the homepage */
+@keyframes typing { from { width: 0; } }
+@keyframes hide-caret {
+    from {
+        border-right: .1em solid black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+.typing {
+    border-right: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(19, end),
+               hide-caret 2s step-end;
+}
+
+h2.typing {
+    width: 10ch;
+}
+
+h3.typing, h4.typing{
+    width: 19ch;
+}
+
+/* Layout Utilities */
+
+.column {
+    max-width: 30em;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
